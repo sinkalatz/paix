@@ -1,0 +1,60 @@
+{
+    "live": {
+        "1": {
+            "title": "CS CONSTANTINE V RS BERKANE LIVE",
+            "since": "2025-04-27T19:00:00",
+            "channel_name": "117-Azam Sports 1 HD-TANZANIA",
+            "channelId": "azam_sports_1_hd",
+            "urlLogo": "https://raw.githubusercontent.com/sinkalatz/my_tv/refs/heads/main/azam_sports_1_hd.png"
+        },
+        "2": {
+            "title": "STELLENBOSCH V SIMBA SC LIVE",
+            "since": "2025-04-27T16:00:00",
+            "channel_name": "117-Azam Sports 1 HD-TANZANIA",
+            "channelId": "azam_sports_1_hd",
+            "urlLogo": "https://raw.githubusercontent.com/sinkalatz/my_tv/refs/heads/main/azam_sports_1_hd.png"
+        },
+        "3": {
+            "title": "SPORTS AM LIVE",
+            "since": "2025-04-27T08:30:00",
+            "channel_name": "117-Azam Sports 1 HD-TANZANIA",
+            "channelId": "azam_sports_1_hd",
+            "urlLogo": "https://raw.githubusercontent.com/sinkalatz/my_tv/refs/heads/main/azam_sports_1_hd.png"
+        },
+        "4": {
+            "title": "BUILD UP LIVE",
+            "since": "2025-04-27T17:00:00",
+            "channel_name": "188-Azam Sports 2 HD-TANZANIA",
+            "channelId": "azam_sports_2_hd",
+            "urlLogo": "https://raw.githubusercontent.com/sinkalatz/my_tv/refs/heads/main/azam_sports_2_hd.png"
+        },
+        "5": {
+            "title": "WERDER BREMEN V ST.PAULI LIVE",
+            "since": "2025-04-27T18:30:00",
+            "channel_name": "188-Azam Sports 2 HD-TANZANIA",
+            "channelId": "azam_sports_2_hd",
+            "urlLogo": "https://raw.githubusercontent.com/sinkalatz/my_tv/refs/heads/main/azam_sports_2_hd.png"
+        },
+        "6": {
+            "title": "ULINZI STARS V FC TALANTA LIVE",
+            "since": "2025-04-27T15:00:00",
+            "channel_name": "188-Azam Sports 2 HD-TANZANIA",
+            "channelId": "azam_sports_2_hd",
+            "urlLogo": "https://raw.githubusercontent.com/sinkalatz/my_tv/refs/heads/main/azam_sports_2_hd.png"
+        },
+        "7": {
+            "title": "BUILD UP LIVE",
+            "since": "2025-04-27T12:30:00",
+            "channel_name": "188-Azam Sports 2 HD-TANZANIA",
+            "channelId": "azam_sports_2_hd",
+            "urlLogo": "https://raw.githubusercontent.com/sinkalatz/my_tv/refs/heads/main/azam_sports_2_hd.png"
+        },
+        "8": {
+            "title": "MATHARE UNITED V TUSKER FC LIVE",
+            "since": "2025-04-27T13:00:00",
+            "channel_name": "188-Azam Sports 2 HD-TANZANIA",
+            "channelId": "azam_sports_2_hd",
+            "urlLogo": "https://raw.githubusercontent.com/sinkalatz/my_tv/refs/heads/main/azam_sports_2_hd.png"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPTV Script Runner</title>
+</head>
+<body>
+    <h1>Run IPTV Script</h1>
+    <form method="post">
+        <button type="submit">Run Script</button>
+    </form>
+    {% if output %}
+        <h2>Output:</h2>
+        <pre>{{ output }}</pre>
+    {% endif %}
+</body>
+</html>

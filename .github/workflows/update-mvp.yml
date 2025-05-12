@@ -1,0 +1,53 @@
+name: Update MVP File
+
+on:
+  # Run automatically every 5 minutes
+  schedule:
+    - cron: '*/5 * * * *'  # Run every 5 minutes (cron syntax: minute hour day month day-of-week)
+
+  # Manual trigger
+  workflow_dispatch:
+
+jobs:
+  update-mvp:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GPD4 }}  # Use the GPD4 token here
+
+      # Step 2: Copy best3.m3u to mvp.m3u
+      - name: Copy best3.m3u to mvp.m3u
+        run: |
+          cp best/best3.m3u mvp.m3u
+          echo "Content of best3.m3u copied to mvp.m3u"
+
+      # Step 3: Check for changes
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet || echo "::set-output name=changed::true"
+
+      # Step 4: Commit and push changes (if there are any)
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GPD4: ${{ secrets.GPD4 }}  # Use the GPD4 token here
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Add the updated file
+          git add mvp.m3u
+
+          # Commit the changes
+          git commit -m "Automated update of mvp.m3u from best2.m3u"
+
+          # Pull changes from remote first to avoid conflicts
+          git pull --rebase https://x-access-token:${GPD4}@github.com/${{ github.repository }}.git main
+
+          # Push changes
+          git push https://x-access-token:${GPD4}@github.com/${{ github.repository }}.git main
